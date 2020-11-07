@@ -1,0 +1,187 @@
+/* 
+CSS File
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato" , sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;   
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212424;
+    height: 100vh;
+}
+
+.logo-box {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.highlight_logo {
+    font-family: 'Raleway' , sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    border: 6px solid white;
+    border-radius: 7px;
+    padding: 4px 10px;
+}
+
+.main-header-div {
+    font-family: 'Raleway' , sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 15px 0px;
+    padding: 5px;
+    z-index: 1;
+}
+
+.highlight {
+    color:tomato;
+}
+
+.menu-container {
+    width: auto;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+ol {
+    margin: 3px;
+    padding: 10px;
+    list-style-type: none;
+    width: 0px auto;
+}
+
+ li {
+    display: inline-block;
+    margin: 5px 15px 5px 15px;
+    width: 200px;
+    text-align:center;
+    border: 1px solid #fff;
+ }
+
+ li:hover {
+     /* border: 1px solid tomato; */ border: 1px black;
+     animation-name: menu_fade;
+     animation-duration: 0.3s;
+ }
+
+  li a {
+     font-family: 'Raleway', Courier, monospace;
+     font-weight: 200;
+     text-align: center;
+     letter-spacing: 6px;
+     color: #fff;
+     font-size: 18px;
+     text-decoration: none;
+     text-transform: uppercase;
+     display: block; 
+ }
+
+ @keyframes menu_fade {
+     0% {transform: translateY(-2px);}
+     10% {}
+     20% {}
+     30% {}
+     40% {}
+     50% {}
+     60% {}
+     70% {}
+     80% {}
+     90% {}
+     100% {opacity: 1.0;transform: translateY(0px);}
+ }
+
+ a:hover {
+    font-weight: 200;
+    color:black;
+    background-color: rgb(206, 194, 194);
+    animation-name: menu_fade;
+    animation-duration: 0.6s; 
+ }
+
+ /* Style for Blog Post */
+
+.div_blog_header {
+    float: left;
+    position: relative;
+    width: auto;
+    height: 90;
+    border: solid 2px white;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    top: 2%;
+    width: 70%;
+    background-color: #14200f 
+}
+
+.h1_post_title {
+    font-family: 'Lato';
+    font-size: 40px;
+    color: white;
+    margin: 4px 25px;
+    text-transform: uppercase;
+}
+
+.post_body {
+    font-family: Lato;
+    font-size: 16px;
+    color:white;
+}
+
+.div_post_body {
+    float: right;
+    position: relative;
+    width: auto;
+    height: auto;
+    border: solid 2px white;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    top: 2%;
+    width: 27%;
+    background-color: #14200f 
+}
+
+.h2_post_title {
+    font-family: 'Lato';
+    font-size: 22px;
+    margin: 25px 25px;
+    text-align: justify;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.post_body_paragraph {
+    font-family: 'Lato';
+    font-size: 16px;
+    color: white;
+    margin: 25px 25px;
+    text-align: justify;
+}
